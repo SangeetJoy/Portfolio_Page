@@ -1,0 +1,107 @@
+:root {
+    --blue: #3c31dd;
+    --red: #dd3f31;
+    --pink: #ff0066;;
+    --dark: #0f0f10;
+    --typeWriterSpeed: 5s
+  }
+  
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    padding: 100px 20vw;
+  }
+  
+  .headingText {
+    font-size: 70px;
+    position: relative;
+  }
+  
+  .headingText::before,
+  .headingText::after
+  {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+  }
+  
+  .headingText::before {
+    background-color: #202731;
+    animation: typewriter var(--typeWriterSpeed) steps(21) 1s forwards;
+  }
+  
+  .headingText::after {
+    width: 0.125em;
+    background-color: white;
+    animation:
+    typewriter var(--typeWriterSpeed) steps(21) 1s forwards,
+    blink 750ms steps(21) infinite
+  }
+  
+  .subTitleText {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 7s forwards;
+    font-size: 20px;
+  } 
+  
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -12rem;
+  }
+  
+  .heading_layer {
+    background-image: url("../../assets/layered-waves-haikei.svg");
+  }
+  
+  .profileImage {
+    height: 23rem;
+      width: 23rem;
+      margin-top: 4rem;
+      border-radius: 212px;
+  }
+  
+  .blue {
+  background: var(--blue)
+  }
+  
+  .red {
+  background: var(--red);
+  }
+  
+  .pink {
+  background: var(--pink);
+  }
+  
+  .dark {
+   background: var(--dark);
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background-color: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    padding: 100px 20vw;
+    background-color: var(--dark);
+}
+
+.introText {
+    font-size: 70px;
+}
+
+.introText span {
+    color: #1395fd;
+}
+
+.introSubTitleText {
+    margin-top: 5rem;
+    position: relative;
+    /* line-height: 46px; */
+    font-size: 29px;
+}
+
+.openingQuotes {
+    position: absolute;
+    top: -37px;
+    left: -39px;
+    font-size: 87px;
+    color: #0179fe;
+}
+
+.closingQuotes {
+    font-size: 87px;
+    position: absolute;
+    bottom: -60px;
+    left: 409px;
+    color: #0179fe;
+}
+
+.introBreak {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../assets/introBreak.svg");
+  }
