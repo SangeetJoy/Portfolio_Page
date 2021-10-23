@@ -78,4 +78,12 @@ margin-bottom: 10px;
     height: 32px;
     margin-right: 13px;
 }
+.skillsBreak {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../assets/skillsBreak.svg");
+}
 

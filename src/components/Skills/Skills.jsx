@@ -13,6 +13,7 @@ function Skills() {
           <Frameworks />
         </section>
       </section>
+      <div className="skillsBreak"></div>
     </>
   );
 }

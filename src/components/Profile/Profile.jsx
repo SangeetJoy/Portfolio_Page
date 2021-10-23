@@ -8,7 +8,7 @@ function Profile() {
                 <p className="subTitleText">FontEnd Developer | MERN Stack | Passionate UI lover | Tech Enthusiast</p>
                 <img className="profileImage" src={profileDp} alt="Dp" />
             </section>
-            <div className="spacer heading_layer"></div>
+            <div className="profileBreak"></div>
         </>
     );
 }
